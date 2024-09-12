@@ -7,66 +7,17 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" href="styles/bootstrap.min.css"/>
-    <link rel="stylesheet" href="styles/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="stylesheet" href="styles/adaptive.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../styles/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 <div class="container-fluid ">
-    <nav class="navbar bg-body-tertiary fixed-top" id="offCanvas">
+    <nav class="navbar navbar-expand bg-body-tertiary mb-5">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Logo</a>
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Навигация</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Преимущества</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Цены</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input
-                                class="form-control me-2"
-                                type="search"
-                                placeholder="Поиск чая"
-                                aria-label="Search"
-                        />
-                        <button class="btn btn-outline-success" type="submit">
-                            Найти
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand bg-body-tertiary mb-5" id="navbar-standart">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Logo</a>
+            <a class="navbar-brand" href="#">Logo</a>
             <button
                     class="navbar-toggler"
                     type="button"
@@ -111,9 +62,9 @@
 
 
     <div class="container-sm">
-        <div class="slider pb-4 pt-5 ">
+        <div class="slider pb-4 pt-5">
             <div class="slider-item">
-                <img src="images/slider1.png" alt="slider-image" class="img">
+                <img src="../images/slider1.png" alt="slider-image">
                 <div class="slider-info fill">
                     <h1 class="slider-title">Скидки на травянные чаи</h1>
                     <p class="slider-text">Узай все подробности, заполнив заявку</p>
@@ -121,7 +72,7 @@
                 </div>
             </div>
             <div class="slider-item slider-two">
-                <img src="images/slider2.png" alt="slider-image" class="slider-image" id="slider-image">
+                <img src="../images/slider2.png" alt="slider-image" class="slider-image">
                 <div class="slider-image background"></div>
 
                 <div class="slider-info order">
@@ -130,22 +81,22 @@
                 </div>
             </div>
             <div class="slider-item slider-three">
-                <img src="images/slider3.png" alt="slider-image" class="img">
+                <img src="../images/slider3.png" alt="slider-image">
                 <div class="slider-info order three">
                     <h1 class="slider-title">Попробуй нашу новинку — ягодный чай</h1>
                     <a href="#" class="btn btn-primary slider-button">Заказать</a>
                 </div>
             </div>
         </div>
-        <h3 class="text-center mb-5 mt-5 fw-bold">Наши чайные коллекции</h3>
-        <div class="container-sm pb-4 ">
+        <h3 class="text-center mb-5 mt-5">Наши чайные коллекции</h3>
+        <div class="container-sm pb-4">
             <div
-                    class=" row d-flex align-content-center justify-content-center g-3 mb-3" id="tea-collection">
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="card" style="max-width: 26rem; min-width: 16rem">
-                        <img src="images/image1.png" class="card-img-top" alt="tea"/>
+                    class="row d-flex align-content-center justify-content-center g-3 mb-3">
+                <div class="col-4">
+                    <div class="card" style="max-width: 26rem; min-width: 18rem">
+                        <img src="../images/image1.png" class="card-img-top" alt="tea"/>
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Детокс чай лайм</h5>
+                            <h5 class="card-title">Детокс чай лайм</h5>
                             <p class="card-text">
                                 Великолепный чай внесет в вашу жизнь яркие краски и вкус
                                 расслабления
@@ -154,11 +105,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="card" style="max-width: 26rem; min-width: 16rem">
-                        <img src="images/image2.png" class="card-img-top" alt="tea"/>
+                <div class="col-4">
+                    <div class="card" style="max-width: 26rem; min-width: 18rem">
+                        <img src="../images/image2.png" class="card-img-top" alt="tea"/>
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Ягодный чай</h5>
+                            <h5 class="card-title">Ягодный чай</h5>
                             <p class="card-text">
                                 Нотки ягод позволят вам расслабиться и насладиться
                                 великолепием этого чая
@@ -167,11 +118,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="card" style="max-width: 26rem; min-width: 16rem">
-                        <img src="images/image3.png" class="card-img-top" alt="tea"/>
+                <div class="col-4">
+                    <div class="card" style="max-width: 26rem; min-width: 18rem">
+                        <img src="../images/image3.png" class="card-img-top" alt="tea"/>
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Цветочный чай</h5>
+                            <h5 class="card-title">Цветочный чай</h5>
                             <p class="card-text">
                                 Душистые цветы создают невероятный аромат и наполняют вас
                                 энергией
@@ -180,12 +131,14 @@
                         </div>
                     </div>
                 </div>
-          
-                <div class="col-12 col-md-6 col-xl-4">
+            </div>
+            <div
+                    class="row d-flex align-content-center justify-content-center g-3">
+                <div class="col-4">
                     <div class="card" style="max-width: 26rem; min-width: 16rem">
-                        <img src="images/image4.png" class="card-img-top" alt="tea"/>
+                        <img src="../images/image4.png" class="card-img-top" alt="tea"/>
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Очищающий чай</h5>
+                            <h5 class="card-title">Очищающий чай</h5>
                             <p class="card-text">
                                 Бесподобный чай для получения утреннего заряда бодрости
                             </p>
@@ -193,11 +146,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="card" style="max-width: 26rem; min-width: 16rem">
-                        <img src="images/image5.png" class="card-img-top" alt="tea"/>
+                <div class="col-4">
+                    <div class="card" style="max-width: 26rem; min-width: 18rem">
+                        <img src="../images/image5.png" class="card-img-top" alt="tea"/>
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Кислый чай</h5>
+                            <h5 class="card-title">Кислый чай</h5>
                             <p class="card-text">
                                 Кислый чай для настоящих ценителей кислинки во время
                                 чаепития
@@ -206,11 +159,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="card" style="max-width: 26rem; min-width: 16rem">
-                        <img src="images/image6.png" class="card-img-top" alt="tea"/>
+                <div class="col-4">
+                    <div class="card" style="max-width: 26rem; min-width: 18rem">
+                        <img src="../images/image6.png" class="card-img-top" alt="tea"/>
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Лимонная мята</h5>
+                            <h5 class="card-title">Лимонная мята</h5>
                             <p class="card-text">
                                 Смесь лимона с мятой сделает ваш день самым лучшим
                             </p>
@@ -220,16 +173,16 @@
                 </div>
             </div>
         </div>
-        <h2 class="text-center mt-5 mb-5 fw-bold">
+        <h2 class="text-center mt-5 mb-5">
             Ответы на часто задаваемые вопросы
         </h2>
-        <div class="row pb-5">
+        <div class="row">
             <div class="col-1 col-lg-2"></div>
             <div class="col-10 col-lg-8">
                 <div id="accordion">
                     <h3 class="select-accord">Собираете ли вы подарочные боксы?
                         <div class="select-icon">
-                            <img src="images/nextDown.png">
+                            <img src="../images/nextDown.png">
                         </div>
                     </h3>
                     <div>
@@ -240,7 +193,7 @@
                     </div>
                     <h3 class="select-accord">Сколько у вас разновидностей чая?
                         <div class="select-icon">
-                            <img src="images/nextUp.png">
+                            <img src="../images/nextUp.png">
                         </div>
                     </h3>
                     <div>
@@ -253,7 +206,7 @@
                     </div>
                     <h3 class="select-accord">В какой срок осуществляется доставка?
                         <div class="select-icon">
-                            <img src="images/nextUp.png">
+                            <img src="../images/nextUp.png">
                         </div>
                     </h3>
                     <div>
@@ -263,7 +216,7 @@
                     </div>
                     <h3 class="select-accord">У вас обновляется ассортимент?
                         <div class="select-icon">
-                            <img src="images/nextUp.png">
+                            <img src="../images/nextUp.png">
                         </div>
                     </h3>
                     <div>
@@ -277,7 +230,7 @@
                     </div>
                     <h3 class="select-accord">Какого объема у вас пачки чая?
                         <div class="select-icon">
-                            <img src="images/nextUp.png">
+                            <img src="../images/nextUp.png">
                         </div>
                     </h3>
                     <div>
@@ -292,63 +245,13 @@
             <div class="col-1 col-lg-2"></div>
         </div>
     </div>
-    <h2 class="text-center mb-5 mt-5 fw-bold">Сделать заказ</h2>
-<div class="container-sm mb-5">
-    <diw class="row mt-2">
-        <div class="col-1 col-md-2 col-lg-3"></div>
-        <div class="col-10 col-md-8 col-lg-6">
-            <form class="row g-4 mb-5">
-                <div class="col-12 col-md-4">
-                  <label for="inputEmail4" class="form-label">Имя</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-12 col-md-4">
-                  <label for="inputPassword4" class="form-label">Фамилия</label>
-                  <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12 col-md-4">
-                  <label for="inputAddress" class="form-label">Телефон</label>
-                  <input type="text" class="form-control" id="inputAddress">
-                </div>
-                <div class="col-12 col-md-6">
-                  <label for="inputAddress5" class="form-label">Страна</label>
-                  <input type="text" class="form-control" id="inputAddress5">
-                </div>
-                <div class="col-12 col-md-6">
-                    <label for="inputAddress2" class="form-label">Индекс</label>
-                    <input type="text" class="form-control" id="inputAddress2">
-                  </div>
-                <div class="col-12">
-                  <label for="inputCity" class="form-label">Адрес</label>
-                  <input type="text" class="form-control" id="inputCity" >
-                </div>
-                
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Отправить</button>
-                </div>
-              </form>
-        </div>
-        <div class="col-1 col-md-2 col-lg-3"></div>
-    </diw>
-
-</div>  
-
-<footer >
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <p class="navbar-nav text-body-secondary">Все права защищены</p>
-        </div>
-      </nav>
-</footer>  
 </div>
 
-
-
-<script src="scripts/jquery-3.7.1.min.js"></script>
-<script src="scripts/jquery-ui.min.js"></script>
-<script src="scripts/jquery-migrate-1.2.1.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="slick/slick.min.js"></script>
-<script src="scripts/script.js"></script>
+<script src="../scripts/jquery-3.7.1.min.js"></script>
+<script src="../scripts/jquery-ui.min.js"></script>
+<script src="../scripts/jquery-migrate-1.2.1.min.js"></script>
+<script src="../scripts/bootstrap.min.js"></script>
+<script src="../slick/slick.min.js"></script>
+<script src="../scripts/script.js"></script>
 </body>
 </html>

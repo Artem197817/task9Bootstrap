@@ -2,35 +2,27 @@
     margin: 0;
     padding: 0;
 }
-#offCanvas{
-    display: none;
-}
-.slider{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .slider-item{
     position: relative;
-   width: 100%;
-}
-.slick-initialized .slick-slide{
-    display: flex;
-    align-items: center;
+    z-index: -1;
 }
 
-.slider-info{   
+.slider-info{
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     box-sizing: border-box;
+
+
 }
 .slider-info.fill{
     max-width: 645px;
     height: 256px;
-    position: absolute;
+    top: 192px;
     left: 120px;
+
 }
 .slider-title{
     font-size: 48px;
@@ -47,27 +39,27 @@
 }
 
 .slider-info.order{
-    position: relative;
     top: 208px;
     left: 122px;
     max-width: 525px;
     height: 224px;
 }
-
-
+.slider1-img{
+    position: relative;
+    z-index: -1;
+}
 
 .slider-image{
     position: absolute;
-    top: calc(50% - 35px);
+    top: 70px;
     right: 120px;
     z-index: 15;
-    width: 418px;
-    height: 500px;
 }
 .slider-image.background{
     background: #EFD585;
-    transform:  rotate(10.67deg);
-    overflow: visible;
+    transform: rotate(10.67deg);
+    width: 418px;
+    height: 500px;
     z-index: 10;
 }
 .slider-image.slider-two{
@@ -75,36 +67,33 @@
     z-index: 5;
 
 }
-.slick-slide img{
-    display: flex;
-    align-items: center;
-}
 .slider-info.three{
-    position: absolute;
     max-width: 594px;
 }
-.slick-prev{
-    left: 12px;
-}
+
 
 .slick-prev.slick-arrow{
+    background-size: cover;
+    background-image: url("../images/arrowLeft.png");
+    z-index: 500;
     color: transparent;
+    left: 12px;
     height: 40px;
-    width: 40px;
-    border: none;
-    z-index: 100;
-    
+    width: 41px;
+    border: none
 }
 .slick-prev.slick-arrow::before{
     display: none;
 }
-.slick-next{
+.slick-next.slick-arrow{
+    background-size: cover;
+    z-index: 500;
     color: transparent;
     height: 40px;
-    width: 40px;
+    width: 41px;
     border: none;
-    z-index: 100;
     right: 12px;
+
 }
 .slick-next.slick-arrow::before{
     display: none;

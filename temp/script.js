@@ -24,21 +24,18 @@ $( function() {
         fontFamily: 'Arial, sans-serif',
         fontSize: '16px', 
         fontWeight: '700', 
-        textAlign: 'left',
+        textAlign: 'right',
         color: 'white', 
         boxSizing: 'border-box', 
         borderRadius: '10px',
-        paddingRight: '24px',
-        
+        paddingRight: '24px'
      })
  
      $('.ui-accordion .ui-accordion-content').css({
         padding: '16px 23px 8px 23px',
         border: 'none'
      });
-     $('.select-icon').css({
-        marginLeft: '15px'
-     });
+    
 
      $('.ui-accordion-header-icon').css({
         display: 'none'
@@ -47,15 +44,15 @@ $( function() {
 
 
     $('.slider').slick({
-        appendArrows: $('.slider'),
-        prevArrow: '<button type="button" class="slick-prev"><img src="images/arrowLeft.png" alt="arrow"></button>',
+        appendArrows: $('.slider-item'),
+        prevArrow: '<button type="button" class="slick-prev">Назад</button>',
         nextArrow: '<button type="button" class="slick-next">' +
             '<img src="images/arrowNext.png" alt="arrow"></button>',
-        infinite: true,
+        // infinite: true,
         speed: 500,
         fade: true,
         cssEase: 'linear',
-        arrows: true,
+
 
     });
 
