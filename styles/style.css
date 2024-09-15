@@ -5,83 +5,21 @@
 #offCanvas{
     display: none;
 }
+
+.slick-initialized .slick-slide{
+    display: flex;
+    align-items: center;
+}
 .slider{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.slider-item{
-    position: relative;
-   width: 100%;
-}
-.slick-initialized .slick-slide{
-    display: flex;
-    align-items: center;
-}
-
-.slider-info{   
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-.slider-info.fill{
-    max-width: 645px;
-    height: 256px;
-    position: absolute;
-    left: 120px;
-}
-.slider-title{
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 55.2px;
-}
-.slider-text{
-    font-size: 20px;
-    line-height: 23px;
-
-}
-.slider-button{
-    width: 170px;
-}
-
-.slider-info.order{
-    position: relative;
-    top: 208px;
-    left: 122px;
-    max-width: 525px;
-    height: 224px;
-}
 
 
-
-.slider-image{
-    position: absolute;
-    top: calc(50% - 35px);
-    right: 120px;
-    z-index: 15;
-    width: 418px;
-    height: 500px;
-}
-.slider-image.background{
-    background: #EFD585;
-    transform:  rotate(10.67deg);
-    overflow: visible;
-    z-index: 10;
-}
-.slider-image.slider-two{
-    background: #F8F9FA;
-    z-index: 5;
-
-}
 .slick-slide img{
     display: flex;
     align-items: center;
-}
-.slider-info.three{
-    position: absolute;
-    max-width: 594px;
 }
 .slick-prev{
     left: 12px;
@@ -108,4 +46,39 @@
 }
 .slick-next.slick-arrow::before{
     display: none;
+}
+.slide1{
+    background-image: url(../images/slider1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide3{
+    background-image: url(../images/slider3.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+#order-thank-you{
+    display: none;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
 }
