@@ -13,29 +13,29 @@ $(document).ready(function () {
                 }
             }
         });
-        let header1 = $('.ui-accordion .ui-accordion-header');
-        header1.css({
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            paddingLeft: '23px',
-            height: '68px',
-            background: 'linear-gradient(360deg, #076BFF 0%, #007BFF 100%)',
-            fontFamily: 'Arial, sans-serif',
-            fontSize: '16px',
-            fontWeight: '700',
-            textAlign: 'left',
-            color: 'white',
-            boxSizing: 'border-box',
-            borderRadius: '10px',
-            paddingRight: '24px',
-
-        })
-
-        $('.ui-accordion .ui-accordion-content').css({
-            padding: '16px 23px 8px 23px',
-            border: 'none'
-        });
+        // let header1 = $('.ui-accordion .ui-accordion-header');
+        // header1.css({
+        //     display: 'flex',
+        //     alignItems: 'center',
+        //     justifyContent: 'space-between',
+        //     paddingLeft: '23px',
+        //     height: '68px',
+        //     background: 'linear-gradient(360deg, #076BFF 0%, #007BFF 100%)',
+        //     fontFamily: 'Arial, sans-serif',
+        //     fontSize: '16px',
+        //     fontWeight: '700',
+        //     textAlign: 'left',
+        //     color: 'white',
+        //     boxSizing: 'border-box',
+        //     borderRadius: '10px',
+        //     paddingRight: '24px',
+        //
+        // })
+        //
+        // $('.ui-accordion .ui-accordion-content').css({
+        //     padding: '16px 23px 8px 23px',
+        //     border: 'none'
+        // });
         $('.select-icon').css({
             marginLeft: '15px'
         });
